@@ -1,0 +1,298 @@
+{
+  "updated": "2025-07-17T00:00:00-04:00",
+  "datasets": [
+    {
+      "short_name": "homesforsale_historiccharleston",
+      "metric": "Homes for Sale",
+      "area_label": "Historic Charleston",
+      "filter_type": "custom_area",
+      "filter_values": ["Downtown Charleston"],
+      "csv_url": "https://ctarmls.stats.10kresearch.com/infoserv/s-v1/9YeQ-Wqo?metric=Homes%20for%20Sale&custom_area=Downtown%20Charleston&tc=Monthly"
+    },
+    {
+      "short_name": "homesforsale_mountpleasant",
+      "metric": "Homes for Sale",
+      "area_label": "Mount Pleasant",
+      "filter_type": "city",
+      "filter_values": ["Mount Pleasant"],
+      "csv_url": "https://ctarmls.stats.10kresearch.com/infoserv/s-v1/9Yei-dhH?metric=Homes%20for%20Sale&city=Mount%20Pleasant&tc=Monthly"
+    },
+    {
+      "short_name": "homesforsale_westashley",
+      "metric": "Homes for Sale",
+      "area_label": "West Ashley",
+      "filter_type": "custom_area",
+      "filter_values": ["West Ashley"],
+      "csv_url": "https://ctarmls.stats.10kresearch.com/infoserv/s-v1/9Yeg-KZL?metric=Homes%20for%20Sale&custom_area=West%20Ashley&tc=Monthly"
+    },
+    {
+      "short_name": "homesforsale_johnsisland",
+      "metric": "Homes for Sale",
+      "area_label": "Johns Island",
+      "filter_type": "area",
+      "filter_values": ["23"],
+      "csv_url": "https://ctarmls.stats.10kresearch.com/infoserv/s-v1/9Yk7-5Zi?metric=Homes%20for%20Sale&area=23&tc=Monthly"
+    },
+    {
+      "short_name": "homesforsale_summerville",
+      "metric": "Homes for Sale",
+      "area_label": "Summerville",
+      "filter_type": "city",
+      "filter_values": ["Summerville"],
+      "csv_url": "https://ctarmls.stats.10kresearch.com/infoserv/s-v1/9YkX-sZ2?metric=Homes%20for%20Sale&city=Summerville&tc=Monthly"
+    },
+    {
+      "short_name": "homesforsale_northcharleston",
+      "metric": "Homes for Sale",
+      "area_label": "North Charleston",
+      "filter_type": "city",
+      "filter_values": ["North Charleston"],
+      "csv_url": "https://ctarmls.stats.10kresearch.com/infoserv/s-v1/9Ykk-zCh?metric=Homes%20for%20Sale&city=North%20Charleston&tc=Monthly"
+    },
+
+    {
+      "short_name": "monthssupply_historiccharleston",
+      "metric": "Months Supply",
+      "area_label": "Historic Charleston",
+      "filter_type": "custom_area",
+      "filter_values": ["Downtown Charleston"],
+      "csv_url": "https://ctarmls.stats.10kresearch.com/infoserv/s-v1/9R4g-t9a?metric=Months%20Supply&custom_area=Downtown%20Charleston&tc=Monthly"
+    },
+    {
+      "short_name": "monthssupply_mountpleasant",
+      "metric": "Months Supply",
+      "area_label": "Mount Pleasant",
+      "filter_type": "city",
+      "filter_values": ["Mount Pleasant"],
+      "csv_url": "https://ctarmls.stats.10kresearch.com/infoserv/s-v1/9ReB-gJn?metric=Months%20Supply&city=Mount%20Pleasant&tc=Monthly"
+    },
+    {
+      "short_name": "monthssupply_westashley",
+      "metric": "Months Supply",
+      "area_label": "West Ashley",
+      "filter_type": "custom_area",
+      "filter_values": ["West Ashley"],
+      "csv_url": "https://ctarmls.stats.10kresearch.com/infoserv/s-v1/9Rp3-DUa?metric=Months%20Supply&custom_area=West%20Ashley&tc=Monthly"
+    },
+    {
+      "short_name": "monthssupply_johnsisland",
+      "metric": "Months Supply",
+      "area_label": "Johns Island",
+      "filter_type": "area",
+      "filter_values": ["23"],
+      "csv_url": "https://ctarmls.stats.10kresearch.com/infoserv/s-v1/9Rpr-Spd?metric=Months%20Supply&area=23&tc=Monthly"
+    },
+    {
+      "short_name": "monthssupply_summerville",
+      "metric": "Months Supply",
+      "area_label": "Summerville",
+      "filter_type": "city",
+      "filter_values": ["Summerville"],
+      "csv_url": "https://ctarmls.stats.10kresearch.com/infoserv/s-v1/9RpI-4hW?metric=Months%20Supply&city=Summerville&tc=Monthly"
+    },
+    {
+      "short_name": "monthssupply_northcharleston",
+      "metric": "Months Supply",
+      "area_label": "North Charleston",
+      "filter_type": "city",
+      "filter_values": ["North Charleston"],
+      "csv_url": "https://ctarmls.stats.10kresearch.com/infoserv/s-v1/9Rkt-caD?metric=Months%20Supply&city=North%20Charleston&tc=Monthly"
+    },
+
+    {
+      "short_name": "newlistings_historiccharleston",
+      "metric": "New Listings",
+      "area_label": "Historic Charleston",
+      "filter_type": "custom_area",
+      "filter_values": ["Downtown Charleston"],
+      "csv_url": "https://ctarmls.stats.10kresearch.com/infoserv/s-v1/9RxY-6XN?metric=New%20Listings&custom_area=Downtown%20Charleston&tc=Monthly"
+    },
+    {
+      "short_name": "newlistings_mountpleasant",
+      "metric": "New Listings",
+      "area_label": "Mount Pleasant",
+      "filter_type": "city",
+      "filter_values": ["Mount Pleasant"],
+      "csv_url": "https://ctarmls.stats.10kresearch.com/infoserv/s-v1/9Rx8-NGk?metric=New%20Listings&city=Mount%20Pleasant&tc=Monthly"
+    },
+    {
+      "short_name": "newlistings_westashley",
+      "metric": "New Listings",
+      "area_label": "West Ashley",
+      "filter_type": "custom_area",
+      "filter_values": ["West Ashley"],
+      "csv_url": "https://ctarmls.stats.10kresearch.com/infoserv/s-v1/9Rxw-C4h?metric=New%20Listings&custom_area=West%20Ashley&tc=Monthly"
+    },
+    {
+      "short_name": "newlistings_johnsisland",
+      "metric": "New Listings",
+      "area_label": "Johns Island",
+      "filter_type": "area",
+      "filter_values": ["23"],
+      "csv_url": "https://ctarmls.stats.10kresearch.com/infoserv/s-v1/9Rxy-Mu4?metric=New%20Listings&area=23&tc=Monthly"
+    },
+    {
+      "short_name": "newlistings_summerville",
+      "metric": "New Listings",
+      "area_label": "Summerville",
+      "filter_type": "city",
+      "filter_values": ["Summerville"],
+      "csv_url": "https://ctarmls.stats.10kresearch.com/infoserv/s-v1/9Rx5-EWU?metric=New%20Listings&city=Summerville&tc=Monthly"
+    },
+    {
+      "short_name": "newlistings_northcharleston",
+      "metric": "New Listings",
+      "area_label": "North Charleston",
+      "filter_type": "city",
+      "filter_values": ["North Charleston"],
+      "csv_url": "https://ctarmls.stats.10kresearch.com/infoserv/s-v1/9Rx4-rrD?metric=New%20Listings&city=North%20Charleston&tc=Monthly"
+    },
+
+    {
+      "short_name": "mediansaleprice_historiccharleston",
+      "metric": "Median Sale Price",
+      "area_label": "Historic Charleston",
+      "filter_type": "custom_area",
+      "filter_values": ["Downtown Charleston"],
+      "csv_url": "https://ctarmls.stats.10kresearch.com/infoserv/s-v1/9Rx9-W0r?metric=Median%20Sale%20Price&custom_area=Downtown%20Charleston&tc=Monthly"
+    },
+    {
+      "short_name": "mediansaleprice_mountpleasant",
+      "metric": "Median Sale Price",
+      "area_label": "Mount Pleasant",
+      "filter_type": "city",
+      "filter_values": ["Mount Pleasant"],
+      "csv_url": "https://ctarmls.stats.10kresearch.com/infoserv/s-v1/9Rot-zib?metric=Median%20Sale%20Price&city=Mount%20Pleasant&tc=Monthly"
+    },
+    {
+      "short_name": "mediansaleprice_westashley",
+      "metric": "Median Sale Price",
+      "area_label": "West Ashley",
+      "filter_type": "custom_area",
+      "filter_values": ["West Ashley"],
+      "csv_url": "https://ctarmls.stats.10kresearch.com/infoserv/s-v1/9Ro2-9Wi?metric=Median%20Sale%20Price&custom_area=West%20Ashley&tc=Monthly"
+    },
+    {
+      "short_name": "mediansaleprice_johnsisland",
+      "metric": "Median Sale Price",
+      "area_label": "Johns Island",
+      "filter_type": "area",
+      "filter_values": ["23"],
+      "csv_url": "https://ctarmls.stats.10kresearch.com/infoserv/s-v1/9RoQ-kLv?metric=Median%20Sale%20Price&area=23&tc=Monthly"
+    },
+    {
+      "short_name": "mediansaleprice_summerville",
+      "metric": "Median Sale Price",
+      "area_label": "Summerville",
+      "filter_type": "city",
+      "filter_values": ["Summerville"],
+      "csv_url": "https://ctarmls.stats.10kresearch.com/infoserv/s-v1/9Rob-nRx?metric=Median%20Sale%20Price&city=Summerville&tc=Monthly"
+    },
+    {
+      "short_name": "mediansaleprice_northcharleston",
+      "metric": "Median Sale Price",
+      "area_label": "North Charleston",
+      "filter_type": "city",
+      "filter_values": ["North Charleston"],
+      "csv_url": "https://ctarmls.stats.10kresearch.com/infoserv/s-v1/9RoP-nFn?metric=Median%20Sale%20Price&city=North%20Charleston&tc=Monthly"
+    },
+
+    {
+      "short_name": "daysonmarket_historiccharleston",
+      "metric": "Days on Market",
+      "area_label": "Historic Charleston",
+      "filter_type": "custom_area",
+      "filter_values": ["Downtown Charleston"],
+      "csv_url": "https://ctarmls.stats.10kresearch.com/infoserv/s-v1/9RI1-dD5?metric=Days%20on%20Market&custom_area=Downtown%20Charleston&tc=Monthly"
+    },
+    {
+      "short_name": "daysonmarket_mountpleasant",
+      "metric": "Days on Market",
+      "area_label": "Mount Pleasant",
+      "filter_type": "city",
+      "filter_values": ["Mount Pleasant"],
+      "csv_url": "https://ctarmls.stats.10kresearch.com/infoserv/s-v1/9RIi-cF1?metric=Days%20on%20Market&city=Mount%20Pleasant&tc=Monthly"
+    },
+    {
+      "short_name": "daysonmarket_westashley",
+      "metric": "Days on Market",
+      "area_label": "West Ashley",
+      "filter_type": "custom_area",
+      "filter_values": ["West Ashley"],
+      "csv_url": "https://ctarmls.stats.10kresearch.com/infoserv/s-v1/9RIJ-oln?metric=Days%20on%20Market&custom_area=West%20Ashley&tc=Monthly"
+    },
+    {
+      "short_name": "daysonmarket_johnsisland",
+      "metric": "Days on Market",
+      "area_label": "Johns Island",
+      "filter_type": "area",
+      "filter_values": ["23"],
+      "csv_url": "https://ctarmls.stats.10kresearch.com/infoserv/s-v1/9RIp-ems?metric=Days%20on%20Market&area=23&tc=Monthly"
+    },
+    {
+      "short_name": "daysonmarket_summerville",
+      "metric": "Days on Market",
+      "area_label": "Summerville",
+      "filter_type": "city",
+      "filter_values": ["Summerville"],
+      "csv_url": "https://ctarmls.stats.10kresearch.com/infoserv/s-v1/9RI4-rGe?metric=Days%20on%20Market&city=Summerville&tc=Monthly"
+    },
+    {
+      "short_name": "daysonmarket_northcharleston",
+      "metric": "Days on Market",
+      "area_label": "North Charleston",
+      "filter_type": "city",
+      "filter_values": ["North Charleston"],
+      "csv_url": "https://ctarmls.stats.10kresearch.com/infoserv/s-v1/9RI9-2HU?metric=Days%20on%20Market&city=North%20Charleston&tc=Monthly"
+    },
+
+    {
+      "short_name": "percentoriginalprice_historiccharleston",
+      "metric": "Percent of Original Price",
+      "area_label": "Historic Charleston",
+      "filter_type": "custom_area",
+      "filter_values": ["Downtown Charleston"],
+      "csv_url": "https://ctarmls.stats.10kresearch.com/infoserv/s-v1/9Rvj-tX5?metric=Percent%20of%20Original%20Price&custom_area=Downtown%20Charleston&tc=Monthly"
+    },
+    {
+      "short_name": "percentoriginalprice_mountpleasant",
+      "metric": "Percent of Original Price",
+      "area_label": "Mount Pleasant",
+      "filter_type": "city",
+      "filter_values": ["Mount Pleasant"],
+      "csv_url": "https://ctarmls.stats.10kresearch.com/infoserv/s-v1/9RvY-2c7?metric=Percent%20of%20Original%20Price&city=Mount%20Pleasant&tc=Monthly"
+    },
+    {
+      "short_name": "percentoriginalprice_westashley",
+      "metric": "Percent of Original Price",
+      "area_label": "West Ashley",
+      "filter_type": "custom_area",
+      "filter_values": ["West Ashley"],
+      "csv_url": "https://ctarmls.stats.10kresearch.com/infoserv/s-v1/9RvS-7kh?metric=Percent%20of%20Original%20Price&custom_area=West%20Ashley&tc=Monthly"
+    },
+    {
+      "short_name": "percentoriginalprice_johnsisland",
+      "metric": "Percent of Original Price",
+      "area_label": "Johns Island",
+      "filter_type": "area",
+      "filter_values": ["23"],
+      "csv_url": "https://ctarmls.stats.10kresearch.com/infoserv/s-v1/9Rv3-ft?metric=Percent%20of%20Original%20Price&area=23&tc=Monthly"
+    },
+    {
+      "short_name": "percentoriginalprice_summerville",
+      "metric": "Percent of Original Price",
+      "area_label": "Summerville",
+      "filter_type": "city",
+      "filter_values": ["Summerville"],
+      "csv_url": "https://ctarmls.stats.10kresearch.com/infoserv/s-v1/9Rvs-QAu?metric=Percent%20of%20Original%20Price&city=Summerville&tc=Monthly"
+    },
+    {
+      "short_name": "percentoriginalprice_northcharleston",
+      "metric": "Percent of Original Price",
+      "area_label": "North Charleston",
+      "filter_type": "city",
+      "filter_values": ["North Charleston"],
+      "csv_url": "https://ctarmls.stats.10kresearch.com/infoserv/s-v1/9RvL-0O2?metric=Percent%20of%20Original%20Price&city=North%20Charleston&tc=Monthly"
+    }
+  ]
+}

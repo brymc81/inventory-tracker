@@ -1,0 +1,21 @@
+{
+  "$schema":"https://json-schema.org/draft/2020-12/schema",
+  "type":"object",
+  "required":["datasets"],
+  "properties":{
+    "updated":{"type":"string"},
+    "datasets":{
+      "type":"array",
+      "items":{
+        "type":"object",
+        "required":["short_name","metric","area_label","filter_type","filter_values","csv_url"],
+        "properties":{
+          "short_name":{"type":"string","pattern":"^[a-z0-9_]+$"},
+          "filter_type":{"type":"string","enum":["area","custom_area","city"]},
+          "filter_values":{"type":"array","items":{"type":"string"}},
+          "csv_url":{"type":"string","format":"uri"}
+        }
+      }
+    }
+  }
+}
