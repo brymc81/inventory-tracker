@@ -26,6 +26,13 @@ jobs:
       - name: Run ETL
         run: python etl.py
 
+      - name: Inspect docs folder
+        run: |
+          echo "---- listing docs ----"
+          ls -l docs || true
+          echo "---- git status ----"
+          git status --porcelain docs/inventory.json || true
+
       - name: Commit & push inventory.json
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
