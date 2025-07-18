@@ -30,12 +30,17 @@ def fetch_csv(url):
     )
 
 def tidy(df, short_name):
-    # 1️⃣ first column (whatever it is) becomes the date
     df = df.copy()
+
+    # 1️⃣ Date column = whatever sits in column 0
     df["date"] = pd.to_datetime(df.iloc[:, 0], errors="coerce")
 
-    # 2️⃣ first numeric column is the value
-    val_col = df.select_dtypes("number").columns[0]
+    # 2️⃣ Force column 1 to numeric; bad cells → NaN
+    val_col = df.columns[1]
+    df[val_col] = pd.to_numeric(df[val_col].str.replace(",", ""), errors="coerce")
+
+    # 3️⃣ Drop rows that lost either date or value
+    df = df.dropna(subset=["date", val_col])
 
     return df[["date", val_col]].rename(columns={val_col: short_name})
 
