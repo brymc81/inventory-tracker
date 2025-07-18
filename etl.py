@@ -20,12 +20,13 @@ def load_catalog():
 def fetch_csv(url):
     r = requests.get(url, timeout=60)
     r.raise_for_status()
-    # engine='python' tolerates variable columns, usecols keeps only first 2
+
     return pd.read_csv(
         io.StringIO(r.text),
-        engine="python",
-        usecols=[0, 1],        # PeriodBegin + value
-        thousands=",",         # handle 1,234 formats
+        engine="python",      # tolerant tokenizer
+        usecols=[0, 1],       # keep PeriodBegin + first numeric value
+        thousands=",",
+        on_bad_lines="skip",  # ← silently drop rows that don't match header width
     )
 
 def tidy(df, short_name):
