@@ -20,7 +20,13 @@ def load_catalog():
 def fetch_csv(url):
     r = requests.get(url, timeout=60)
     r.raise_for_status()
-    return pd.read_csv(io.StringIO(r.text))
+    # engine='python' tolerates variable columns, usecols keeps only first 2
+    return pd.read_csv(
+        io.StringIO(r.text),
+        engine="python",
+        usecols=[0, 1],        # PeriodBegin + value
+        thousands=",",         # handle 1,234 formats
+    )
 
 def tidy(df, short_name):
     # 10K CSVs use PeriodBegin for the month’s first day
