@@ -33,16 +33,21 @@ def tidy(df, short_name):
     df = df.copy()
 
     # 1️⃣ Date column = whatever sits in column 0
-    df["date"] = pd.to_datetime(df.iloc[:, 0], errors="coerce")
+    df["date"] = pd.to_datetime(df.iloc[:, 0], format="%Y-%m-%d", errors="coerce")
 
     # 2️⃣ Force column 1 to numeric; bad cells → NaN
     val_col = df.columns[1]
     df[val_col] = pd.to_numeric(df[val_col].str.replace(",", ""), errors="coerce")
 
-    # 3️⃣ Drop rows that lost either date or value
+    # 3️⃣ Drop rows missing either field
     df = df.dropna(subset=["date", val_col])
 
-    return df[["date", val_col]].rename(columns={val_col: short_name})
+    # 4️⃣ Return with date as the index
+    return (
+        df.set_index("date")[[val_col]]
+          .rename(columns={val_col: short_name})
+          .sort_index()
+    )
 
 def main():
     frames = []
@@ -52,11 +57,9 @@ def main():
         frames.append(tidy(csv_df, ds["short_name"]))
 
     wide = (
-        pd.concat(frames, axis=1)
-          .groupby("date", as_index=False).first()
-          .set_index("date")
-          .asfreq("D")            # daily index
-          .ffill()
+    pd.concat(frames, axis=1)   # rows align on the date index
+      .asfreq("D")              # daily grid
+      .ffill()                  # forward-fill gaps
     )
 
     # rolling 7-day New Listings
