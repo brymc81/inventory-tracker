@@ -18,16 +18,15 @@ jobs:
       - name: Install deps
         run: |
           python -m pip install --no-cache-dir -r requirements.txt
+          python -m pip install --quiet jsonschema
 
       - name: Validate catalog
-        run: |
-          python -m pip install jsonschema
-          python -m jsonschema -i csv_catalog.json schema.json
+        run: python -m jsonschema -i csv_catalog.json schema.json
 
       - name: Run ETL
         run: python etl.py
 
-      - name: Commit & push
+      - name: Commit & push inventory.json
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
           commit_message: "chore(data): nightly refresh"
