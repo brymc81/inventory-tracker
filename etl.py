@@ -90,6 +90,8 @@ def main() -> None:
     nl_cols = [c for c in wide.columns if c.startswith("newlistings_")]
     wide[[f"{c}_7d" for c in nl_cols]] = wide[nl_cols].rolling(7).sum()
 
+    print("Wide shape →", wide.shape)   # debug line
+
     # ensure docs/ exists and write the JSON
     OUTPUT.parent.mkdir(parents=True, exist_ok=True)
     wide.reset_index().to_json(OUTPUT, orient="records", date_format="iso")
