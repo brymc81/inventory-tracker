@@ -77,6 +77,12 @@ def main() -> None:
     for ds in load_catalog():
         print("→", ds["short_name"])
         csv_df = fetch_csv(ds["csv_url"])
+
+        # DEBUG: peek at the first three raw date strings
+        if csv_df.iloc[0, 0][:10].isalpha():      # first char isn’t a digit
+            print("DEBUG", ds["short_name"], "dates look like",
+                  csv_df.iloc[:3, 0].tolist())
+
         frames.append(tidy(csv_df, ds["short_name"]))
 
     # combine on the shared date index
